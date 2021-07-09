@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Orgs</string>
+    <string name="label_btn_salvar">Salvar</string>
+    <string name="placeholder_campo_valor">Valor</string>
+    <string name="placeholder_campo_descricao">Descrição</string>
+    <string name="placeholder_campo_nome">Nome</string>
 </resources>

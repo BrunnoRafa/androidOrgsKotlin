@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.FormularioProdutoActivity">
+
+        <EditText
+            android:id="@+id/activity_formulario_produto_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="@string/placeholder_campo_nome"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="edit text nome" />
+
+        <EditText
+            android:id="@+id/activity_formulario_produto_descriao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/placeholder_campo_descricao"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@id/activity_formulario_produto_nome"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_produto_nome"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_produto_nome"
+            tools:text="edit text descrição" />
+
+        <EditText
+            android:id="@+id/activity_formulario_produto_valor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/placeholder_campo_valor"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="@id/activity_formulario_produto_descriao"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_produto_descriao"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_produto_descriao"
+            tools:text="edit text valor" />
+
+        <Button
+            android:id="@+id/activity_formulario_produto_botao_salvar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/label_btn_salvar"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_formulario_produto_valor"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
